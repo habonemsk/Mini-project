@@ -1,0 +1,273 @@
+
+Repeated String Match
+========================================
+
+**Problem Statement**:
+Given two strings `a` and `b`, return the minimum number of times you need to repeat string `a` so that string `b` is a substring of it.
+
+**Python Code**:
+
+def solution_X(a: str, b: str) -> int:
+    # ... (The code is as shown above)
+
+def solution_Y(a: str, b: str) -> int:
+    # ... (The code is as shown above)
+
+**Benchmark Results**:
+Entity X:
+  - Correct answers: 5 out of 5
+  - Total time taken: 0.000011 seconds
+
+Entity Y:
+  - Correct answers: 5 out of 5
+  - Total time taken: 0.000008 seconds
+
+
+
+Reverse Only Letters
+========================================
+
+**Problem Statement**:
+Given a string `s`, return a string after reversing only the alphabetic characters while keeping the position of the other characters unchanged.
+
+**Python Code**:
+
+def solution_X(s: str) -> str:
+    # ... (The code is as shown above)
+
+def solution_Y(s: str) -> str:
+    # ... (The code is as shown above)
+
+**Benchmark Results**:
+Entity X:
+  - Correct answers: 5 out of 5
+  - Total time taken: 0.000039 seconds
+
+Entity Y:
+  - Correct answers: 5 out of 5
+  - Total time taken: 0.000015 seconds
+
+
+
+Valid Palindrome II
+========================================
+
+**Problem Statement**:
+Given a non-empty string `s`, determine if you can make it a palindrome by deleting at most one character.
+
+**Python Code**:
+
+def solution_X(s: str) -> bool:
+    # ... (The code is as shown above)
+
+def solution_Y(s: str) -> bool:
+    # ... (The code is as shown above)
+
+**Benchmark Results**:
+Entity X:
+  - Correct answers: 4 out of 5
+  - Total time taken: 0.000010 seconds
+
+Entity Y:
+  - Correct answers: 4 out of 5
+  - Total time taken: 0.000007 seconds
+
+
+
+Find Words That Can Be Formed by Characters
+========================================
+
+**Problem Statement**:
+You are given an array of strings `words` and a string `chars`. Return the sum of lengths of all good strings in `words`.
+
+**Python Code**:
+
+def solution_X(words: list, chars: str) -> int:
+    # ... (The code is as shown above)
+
+def solution_Y(words: list, chars: str) -> int:
+    # ... (The code is as shown above)
+
+**Benchmark Results**:
+Entity X:
+  - Correct answers: 4 out of 5
+  - Total time taken: 0.000085 seconds
+
+Entity Y:
+  - Correct answers: 4 out of 5
+  - Total time taken: 0.000062 seconds
+
+
+
+Check If a Word Occurs As a Prefix of Any Word in a Sentence
+===========================================================
+
+**Problem Statement**:
+Given a sentence `s` and a word `searchWord`, check if `searchWord` is a prefix of any word in `s`.
+
+**Python Code**:
+
+def solution_X(s: str, searchWord: str) -> int:
+    # ... (The code is as shown above)
+
+def solution_Y(s: str, searchWord: str) -> int:
+    # ... (The code is as shown above)
+
+**Benchmark Results**:
+Entity X:
+  - Correct answers: 5 out of 5
+  - Total time taken: 0.000021 seconds
+
+Entity Y:
+  - Correct answers: 5 out of 5
+  - Total time taken: 0.000015 seconds
+
+
+
+Shuffle String
+==============
+
+**Problem Statement**:
+Given a string `s` and an integer array `indices`, shuffle the string such that the character at the `i`-th position moves to `indices[i]` position.
+
+**Python Code**:
+
+def solution_X(s: str, indices: list) -> str:
+    # ... (The code is as shown above)
+
+def solution_Y(s: str, indices: list) -> str:
+    # ... (The code is as shown above)
+
+**Benchmark Results**:
+Entity X:
+  - Correct answers: 5 out of 5
+  - Total time taken: 0.000014 seconds
+
+Entity Y:
+  - Correct answers: 5 out of 5
+  - Total time taken: 0.000010 seconds
+
+
+
+Thousand Separator
+==================
+
+**Problem Statement**:
+Given an integer `n`, add a dot (".") as the thousands separator and return it in string format.
+
+**Python Code**:
+
+def solution_X(n: int) -> str:
+    # ... (The code is as shown above)
+
+def solution_Y(n: int) -> str:
+    # ... (The code is as shown above)
+
+**Benchmark Results**:
+Entity X:
+  - Correct answers: 5 out of 5
+  - Total time taken: 0.000034 seconds
+
+Entity Y:
+  - Correct answers: 5 out of 5
+  - Total time taken: 0.000022 seconds
+
+
+
+Number of Steps to Reduce a Number in Binary Representation to One
+==================================================================
+
+**Problem Statement**:
+Given a binary string `s`, return the number of steps to reduce it to 1 when interpreted as a binary number.
+
+**Python Code**:
+
+def solution_X(s: str) -> int:
+    # ... (The code is as shown above)
+
+def solution_Y(s: str) -> int:
+    # ... (The code is as shown above)
+
+**Benchmark Results**:
+Entity X:
+  - Correct answers: 3 out of 5
+  - Total time taken: 0.000014 seconds
+
+Entity Y:
+  - Correct answers: 3 out of 5
+  - Total time taken: 0.000025 seconds
+
+
+
+Determine If String Halves Are Alike
+====================================
+
+**Problem Statement**:
+Given a string `s` of even length, determine if the number of vowels in the first half is the same as the number in the second half.
+
+**Python Code**:
+
+def solution_X(s: str) -> bool:
+    # ... (The code is as shown above)
+
+def solution_Y(s: str) -> bool:
+    # ... (The code is as shown above)
+
+**Benchmark Results**:
+Entity X:
+  - Correct answers: 4 out of 5
+  - Total time taken: 0.000020 seconds
+
+Entity Y:
+  - Correct answers: 4 out of 5
+  - Total time taken: 0.000015 seconds
+
+
+
+Truncate Sentence
+=================
+
+**Problem Statement**:
+Given a sentence `s` and an integer `k`, truncate the sentence such that it contains only the first `k` words.
+
+**Python Code**:
+
+def solution_X(s: str, k: int) -> str:
+    # ... (The code is as shown above)
+
+def solution_Y(s: str, k: int) -> str:
+    # ... (The code is as shown above)
+
+**Benchmark Results**:
+Entity X:
+  - Correct answers: 5 out of 5
+  - Total time taken: 0.000015 seconds
+
+Entity Y:
+  - Correct answers: 5 out of 5
+  - Total time taken: 0.000006 seconds
+
+
+
+Check if One String Swap Can Make Strings Equal
+===============================================
+
+**Problem Statement**:
+You are given two strings `s1` and `s2` of equal length. Return `True` if it is possible to make the two strings equal by performing at most one string swap on exactly one of the strings.
+
+**Python Code**:
+
+def solution_X(s1: str, s2: str) -> bool:
+    # ... (The code is as shown above)
+
+def solution_Y(s1: str, s2: str) -> bool:
+    # ... (The code is as shown above)
+
+**Benchmark Results**:
+Entity X:
+  - Correct answers: 5 out of 5
+  - Total time taken: 0.000015 seconds
+
+Entity Y:
+  - Correct answers: 5 out of 5
+  - Total time taken: 0.000009 seconds

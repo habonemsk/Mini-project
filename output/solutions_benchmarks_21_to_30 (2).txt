@@ -1,0 +1,223 @@
+
+Count Binary Substrings
+========================================
+
+**Problem Statement**:
+Given a binary string `s`, count the number of non-empty (contiguous) substrings that have the same number of 0's and 1's, and all the 0's and all the 1's in these substrings are grouped consecutively.
+
+**Python Code**:
+
+def solution_X(s: str) -> int:
+    # ... (The code is as shown above)
+
+def solution_Y(s: str) -> int:
+    # ... (The code is as shown above)
+
+**Benchmark Results**:
+Entity X:
+  - Correct answers: 4 out of 5
+  - Total time taken: 0.000048 seconds
+
+Entity Y:
+  - Correct answers: 4 out of 5
+  - Total time taken: 0.000020 seconds
+
+
+
+To Lower Case
+========================================
+
+**Problem Statement**:
+Given a string `s`, convert it to lowercase.
+
+**Python Code**:
+
+def solution_X(s: str) -> str:
+    # ... (The code is as shown above)
+
+def solution_Y(s: str) -> str:
+    # ... (The code is as shown above)
+
+**Benchmark Results**:
+Entity X:
+  - Correct answers: 5 out of 5
+  - Total time taken: 0.000003 seconds
+
+Entity Y:
+  - Correct answers: 5 out of 5
+  - Total time taken: 0.000002 seconds
+
+
+
+Reverse Only Letters
+========================================
+
+**Problem Statement**:
+Given a string `s`, reverse the string without affecting the positions of the non-letter characters.
+
+**Python Code**:
+
+def solution_X(s: str) -> str:
+    # ... (The code is as shown above)
+
+def solution_Y(s: str) -> str:
+    # ... (The code is as shown above)
+
+**Benchmark Results**:
+Entity X:
+  - Correct answers: 5 out of 5
+  - Total time taken: 0.000018 seconds
+
+Entity Y:
+  - Correct answers: 5 out of 5
+  - Total time taken: 0.000031 seconds
+
+
+
+Jewels and Stones
+========================================
+
+**Problem Statement**:
+Given strings `jewels` representing the types of stones that are jewels, and `stones` representing the stones you have, return the number of stones that are also jewels.
+
+**Python Code**:
+
+def solution_X(jewels: str, stones: str) -> int:
+    # ... (The code is as shown above)
+
+def solution_Y(jewels: str, stones: str) -> int:
+    # ... (The code is as shown above)
+
+**Benchmark Results**:
+Entity X:
+  - Correct answers: 5 out of 5
+  - Total time taken: 0.000011 seconds
+
+Entity Y:
+  - Correct answers: 5 out of 5
+  - Total time taken: 0.000009 seconds
+
+
+
+Goat Latin
+========================================
+
+**Problem Statement**:
+Given a sentence `s` composed of words separated by spaces, convert the sentence to "Goat Latin".
+
+**Python Code**:
+
+def solution_X(s: str) -> str:
+    # ... (The code is as shown above)
+
+def solution_Y(s: str) -> str:
+    # ... (The code is as shown above)
+
+**Benchmark Results**:
+Entity X:
+  - Correct answers: 4 out of 5
+  - Total time taken: 0.000038 seconds
+
+Entity Y:
+  - Correct answers: 4 out of 5
+  - Total time taken: 0.000068 seconds
+
+
+
+Unique Morse Code Words
+========================================
+
+**Problem Statement**:
+Given an array of words where each word consists only of lowercase English letters, transform each word into Morse code. Return the number of different transformations among all words we have.
+
+**Python Code**:
+
+def solution_X(words: list) -> int:
+    # ... (The code is as shown above)
+
+def solution_Y(words: list) -> int:
+    # ... (The code is as shown above)
+
+**Benchmark Results**:
+Entity X:
+  - Correct answers: 5 out of 5
+  - Total time taken: 0.000061 seconds
+
+Entity Y:
+  - Correct answers: 5 out of 5
+  - Total time taken: 0.000046 seconds
+
+
+
+Robot Return to Origin
+========================================
+
+**Problem Statement**:
+Given a string representing the sequence of moves a robot vacuum makes, determine if the robot returns to the starting point or origin after completing its moves.
+
+**Python Code**:
+
+def solution_X(moves: str) -> bool:
+    # ... (The code is as shown above)
+
+def solution_Y(moves: str) -> bool:
+    # ... (The code is as shown above)
+
+**Benchmark Results**:
+Entity X:
+  - Correct answers: 5 out of 5
+  - Total time taken: 0.000008 seconds
+
+Entity Y:
+  - Correct answers: 5 out of 5
+  - Total time taken: 0.000006 seconds
+
+
+
+Ransom Note
+========================================
+
+**Problem Statement**:
+Given an arbitrary ransom note string and another string containing letters from all the magazines, determine if the ransom note can be constructed from the magazines.
+
+**Python Code**:
+
+def solution_X(ransomNote: str, magazine: str) -> bool:
+    # ... (The code is as shown above)
+
+def solution_Y(ransomNote: str, magazine: str) -> bool:
+    # ... (The code is as shown above)
+
+**Benchmark Results**:
+Entity X:
+  - Correct answers: 5 out of 5
+  - Total time taken: 0.000035 seconds
+
+Entity Y:
+  - Correct answers: 5 out of 5
+  - Total time taken: 0.000035 seconds
+
+
+
+Reverse Vowels of a String
+========================================
+
+**Problem Statement**:
+Given a string `s`, reverse only the vowels in it and return the resulting string.
+
+**Python Code**:
+
+def solution_X(s: str) -> str:
+    # ... (The code is as shown above)
+
+def solution_Y(s: str) -> str:
+    # ... (The code is as shown above)
+
+**Benchmark Results**:
+Entity X:
+  - Correct answers: 5 out of 5
+  - Total time taken: 0.000019 seconds
+
+Entity Y:
+  - Correct answers: 5 out of 5
+  - Total time taken: 0.000013 seconds

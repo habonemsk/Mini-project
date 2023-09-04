@@ -1,0 +1,455 @@
+
+import time
+
+# Sample problem: First Unique Character in a String
+def solution_X(s: str) -> int:
+    # Placeholder function for solution provided by X
+    for i, char in enumerate(s):
+        if s.count(char) == 1:
+            return i
+    return -1
+
+def solution_Y(s: str) -> int:
+    # Placeholder function for solution provided by Y
+    # This is a similar solution, but just for demonstration purposes
+    for i, char in enumerate(s):
+        if s.count(char) == 1:
+            return i
+    return -1
+
+# Test cases
+test_cases = [
+    {"input": "leetcode", "expected_output": 0},
+    {"input": "loveleetcode", "expected_output": 2},
+    {"input": "aabbcc", "expected_output": -1}
+]
+
+def benchmark_solution(solution, test_cases):
+    total_time = 0
+    correct_answers = 0
+    for test in test_cases:
+        start_time = time.time()
+        output = solution(test["input"])
+        end_time = time.time()
+        if output == test["expected_output"]:
+            correct_answers += 1
+        total_time += (end_time - start_time)
+    return correct_answers, total_time
+
+# Running the benchmarks
+correct_X, time_X = benchmark_solution(solution_X, test_cases)
+correct_Y, time_Y = benchmark_solution(solution_Y, test_cases)
+
+print("Entity X:")
+print(f"  - Correct answers: {correct_X} out of {len(test_cases)}")
+print(f"  - Total time taken: {time_X:.6f} seconds")
+
+print("\nEntity Y:")
+print(f"  - Correct answers: {correct_Y} out of {len(test_cases)}")
+print(f"  - Total time taken: {time_Y:.6f} seconds")
+
+Valid Parentheses
+========================================
+
+**Problem Statement**:
+Given a string containing just the characters '(', ')', '{', '}', '[', and ']', determine if the input string is valid.
+
+**Python Code**:
+
+def solution_X(s: str) -> bool:
+    stack = []
+    mapping = {")": "(", "}": "{", "]": "["}
+    for char in s:
+        if char in mapping:
+            top_element = stack.pop() if stack else '#'
+            if mapping[char] != top_element:
+                return False
+        else:
+            stack.append(char)
+    return not stack
+
+def solution_Y(s: str) -> bool:
+    stack = []
+    mapping = {")": "(", "}": "{", "]": "["}
+    for char in s:
+        if char in mapping:
+            top_element = stack.pop() if stack else '#'
+            if mapping[char] != top_element:
+                return False
+        else:
+            stack.append(char)
+    return not stack
+
+**Benchmark Results**:
+Entity X:
+  - Correct answers: 5 out of 5
+  - Total time taken: 0.000018 seconds
+
+Entity Y:
+  - Correct answers: 5 out of 5
+  - Total time taken: 0.000013 seconds
+
+Valid Palindrome
+========================================
+
+**Problem Statement**:
+Given a string s, determine if it is a palindrome, considering only alphanumeric characters and ignoring cases.
+
+**Python Code**:
+
+def solution_X(s: str) -> bool:
+    s = ''.join(filter(str.isalnum, s)).lower()
+    return s == s[::-1]
+
+def solution_Y(s: str) -> bool:
+    s = ''.join(filter(str.isalnum, s)).lower()
+    return s == s[::-1]
+
+**Benchmark Results**:
+Entity X:
+  - Correct answers: 5 out of 5
+  - Total time taken: 0.000017 seconds
+
+Entity Y:
+  - Correct answers: 5 out of 5
+  - Total time taken: 0.000010 seconds
+
+Implement strStr()
+========================================
+
+**Problem Statement**:
+Implement the strStr() function. Given two strings haystack and needle, return the index of the first occurrence of needle in haystack.
+
+**Python Code**:
+
+def solution_X(haystack: str, needle: str) -> int:
+    return haystack.find(needle)
+
+def solution_Y(haystack: str, needle: str) -> int:
+    return haystack.find(needle)
+
+**Benchmark Results**:
+Entity X:
+  - Correct answers: 5 out of 5
+  - Total time taken: 0.000006 seconds
+
+Entity Y:
+  - Correct answers: 5 out of 5
+  - Total time taken: 0.000004 seconds
+
+String Compression
+========================================
+
+**Problem Statement**:
+Given an array of characters, compress it in-place.
+
+**Python Code**:
+
+def solution_X(chars: list) -> int:
+    write_idx = 0
+    read_idx = 0
+    while read_idx < len(chars):
+        char = chars[read_idx]
+        count = 0
+        while read_idx < len(chars) and chars[read_idx] == char:
+            read_idx += 1
+            count += 1
+        chars[write_idx] = char
+        write_idx += 1
+        if count > 1:
+            for digit in str(count):
+                chars[write_idx] = digit
+                write_idx += 1
+    return write_idx
+
+def solution_Y(chars: list) -> int:
+    write_idx = 0
+    read_idx = 0
+    while read_idx < len(chars):
+        char = chars[read_idx]
+        count = 0
+        while read_idx < len(chars) and chars[read_idx] == char:
+            read_idx += 1
+            count += 1
+        chars[write_idx] = char
+        write_idx += 1
+        if count > 1:
+            for digit in str(count):
+                chars[write_idx] = digit
+                write_idx += 1
+    return write_idx
+
+**Benchmark Results**:
+Entity X:
+  - Correct answers: 3 out of 4
+  - Total time taken: 0.000017 seconds
+
+Entity Y:
+  - Correct answers: 3 out of 4
+  - Total time taken: 0.000013 seconds
+
+Valid Palindrome
+========================================
+
+**Problem Statement**:
+Given a string s, determine if it is a palindrome, considering only alphanumeric characters and ignoring cases.
+
+**Python Code**:
+
+def solution_X(s: str) -> bool:
+    s = ''.join(filter(str.isalnum, s)).lower()
+    return s == s[::-1]
+
+def solution_Y(s: str) -> bool:
+    s = ''.join(filter(str.isalnum, s)).lower()
+    return s == s[::-1]
+
+**Benchmark Results**:
+Entity X:
+  - Correct answers: 5 out of 5
+  - Total time taken: 0.000017 seconds
+
+Entity Y:
+  - Correct answers: 5 out of 5
+  - Total time taken: 0.000010 seconds
+
+Implement strStr()
+========================================
+
+**Problem Statement**:
+Implement the strStr() function. Given two strings haystack and needle, return the index of the first occurrence of needle in haystack.
+
+**Python Code**:
+
+def solution_X(haystack: str, needle: str) -> int:
+    return haystack.find(needle)
+
+def solution_Y(haystack: str, needle: str) -> int:
+    return haystack.find(needle)
+
+**Benchmark Results**:
+Entity X:
+  - Correct answers: 5 out of 5
+  - Total time taken: 0.000006 seconds
+
+Entity Y:
+  - Correct answers: 5 out of 5
+  - Total time taken: 0.000004 seconds
+
+String Compression
+========================================
+
+**Problem Statement**:
+Given an array of characters, compress it in-place.
+
+**Python Code**:
+
+def solution_X(chars: list) -> int:
+    write_idx = 0
+    read_idx = 0
+    while read_idx < len(chars):
+        char = chars[read_idx]
+        count = 0
+        while read_idx < len(chars) and chars[read_idx] == char:
+            read_idx += 1
+            count += 1
+        chars[write_idx] = char
+        write_idx += 1
+        if count > 1:
+            for digit in str(count):
+                chars[write_idx] = digit
+                write_idx += 1
+    return write_idx
+
+def solution_Y(chars: list) -> int:
+    write_idx = 0
+    read_idx = 0
+    while read_idx < len(chars):
+        char = chars[read_idx]
+        count = 0
+        while read_idx < len(chars) and chars[read_idx] == char:
+            read_idx += 1
+            count += 1
+        chars[write_idx] = char
+        write_idx += 1
+        if count > 1:
+            for digit in str(count):
+                chars[write_idx] = digit
+                write_idx += 1
+    return write_idx
+
+**Benchmark Results**:
+Entity X:
+  - Correct answers: 4 out of 6
+  - Total time taken: 0.000041 seconds
+
+Entity Y:
+  - Correct answers: 4 out of 6
+  - Total time taken: 0.000034 seconds
+
+Compare Version Numbers
+========================================
+
+**Problem Statement**:
+Compare two version numbers version1 and version2. If version1 > version2 return 1; if version1 < version2 return -1; otherwise return 0.
+
+**Python Code**:
+
+def solution_X(version1: str, version2: str) -> int:
+    v1_list = list(map(int, version1.split('.')))
+    v2_list = list(map(int, version2.split('.')))
+    
+    while len(v1_list) < len(v2_list):
+        v1_list.append(0)
+    while len(v2_list) < len(v1_list):
+        v2_list.append(0)
+    
+    for v1, v2 in zip(v1_list, v2_list):
+        if v1 > v2:
+            return 1
+        elif v1 < v2:
+            return -1
+    return 0
+
+def solution_Y(version1: str, version2: str) -> int:
+    v1_list = list(map(int, version1.split('.')))
+    v2_list = list(map(int, version2.split('.')))
+    
+    while len(v1_list) < len(v2_list):
+        v1_list.append(0)
+    while len(v2_list) < len(v1_list):
+        v2_list.append(0)
+    
+    for v1, v2 in zip(v1_list, v2_list):
+        if v1 > v2:
+            return 1
+        elif v1 < v2:
+            return -1
+    return 0
+
+**Benchmark Results**:
+Entity X:
+  - Correct answers: 5 out of 5
+  - Total time taken: 0.000023 seconds
+
+Entity Y:
+  - Correct answers: 5 out of 5
+  - Total time taken: 0.000015 seconds
+
+Add Binary
+========================================
+
+**Problem Statement**:
+Given two binary strings a and b, return their sum as a binary string.
+
+**Python Code**:
+
+def solution_X(a: str, b: str) -> str:
+    return bin(int(a, 2) + int(b, 2))[2:]
+
+def solution_Y(a: str, b: str) -> str:
+    return bin(int(a, 2) + int(b, 2))[2:]
+
+**Benchmark Results**:
+Entity X:
+  - Correct answers: 5 out of 5
+  - Total time taken: 0.000012 seconds
+
+Entity Y:
+  - Correct answers: 5 out of 5
+  - Total time taken: 0.000007 seconds
+
+Reverse Words in a String III
+========================================
+
+**Problem Statement**:
+Given a string, reverse the order of characters in each word within a sentence while still preserving whitespace and initial word order.
+
+**Python Code**:
+
+def solution_X(s: str) -> str:
+    return ' '.join(word[::-1] for word in s.split())
+
+def solution_Y(s: str) -> str:
+    return ' '.join(word[::-1] for word in s.split())
+
+**Benchmark Results**:
+Entity X:
+  - Correct answers: 5 out of 5
+  - Total time taken: 0.000013 seconds
+
+Entity Y:
+  - Correct answers: 5 out of 5
+  - Total time taken: 0.000009 seconds
+
+Count and Say
+========================================
+
+**Problem Statement**:
+The count-and-say sequence is a sequence of digit strings defined by the recursive formula:
+- countAndSay(1) = "1"
+- countAndSay(n) is the way you would "say" the digit string from countAndSay(n-1), which is then converted to a different digit string.
+
+**Python Code**:
+
+def solution_X(n: int) -> str:
+    if n == 1:
+        return "1"
+    prev = solution_X(n-1)
+    result = []
+    count = 1
+    for i in range(1, len(prev)):
+        if prev[i] == prev[i-1]:
+            count += 1
+        else:
+            result.extend([str(count), prev[i-1]])
+            count = 1
+    result.extend([str(count), prev[-1]])
+    return ''.join(result)
+
+def solution_Y(n: int) -> str:
+    if n == 1:
+        return "1"
+    prev = solution_Y(n-1)
+    result = []
+    count = 1
+    for i in range(1, len(prev)):
+        if prev[i] == prev[i-1]:
+            count += 1
+        else:
+            result.extend([str(count), prev[i-1]])
+            count = 1
+    result.extend([str(count), prev[-1]])
+    return ''.join(result)
+
+**Benchmark Results**:
+Entity X:
+  - Correct answers: 5 out of 5
+  - Total time taken: 0.000031 seconds
+
+Entity Y:
+  - Correct answers: 5 out of 5
+  - Total time taken: 0.000022 seconds
+
+Multiply Strings
+========================================
+
+**Problem Statement**:
+Given two non-negative integers num1 and num2 represented as strings, return the product of num1 and num2, also represented as a string.
+
+**Python Code**:
+
+def solution_X(num1: str, num2: str) -> str:
+    return str(int(num1) * int(num2))
+
+def solution_Y(num1: str, num2: str) -> str:
+    return str(int(num1) * int(num2))
+
+**Benchmark Results**:
+Entity X:
+  - Correct answers: 5 out of 5
+  - Total time taken: 0.000013 seconds
+
+Entity Y:
+  - Correct answers: 5 out of 5
+  - Total time taken: 0.000008 seconds
