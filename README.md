@@ -16,7 +16,7 @@ Welcome to our project! This is a Todo list App made in Python and the Django fr
 
 ## Instructions
 1. Firt upload the Project File in order to lsite the requirement
-2. Prepare a file with 100 problems(input folder)
+2. Prepare a file with 100 problems(input folder(combined_problems))
 3. base on the requirement listed solve 10 first problems of the file
 4. ChatGPT has to list first 10 problems to solve
 5. Provide guidline from the ouput expected:
